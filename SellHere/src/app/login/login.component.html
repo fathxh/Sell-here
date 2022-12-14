@@ -1,0 +1,45 @@
+
+<div class="outer row">
+
+       
+         
+         <div class="col-6">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/photos/photo1.png" height="300px" width=1000px class="w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/photos/photo2.png" height="300px" width=1000px class="d-block w-100" alt="...">              </div>
+              <div class="carousel-item">
+                <img src="./assets/photos/photo3.png" height="300px" width=1000px class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+         </div>
+         <div class="col-6">
+          <form class="m-5">
+            <div class="form-group">
+            <label>Phone</label>
+            <input type="text" [(ngModel)]="phone" name="phone" class="form-control" placeholder="Phone">
+         </div>
+         <div class="form-group">
+            <label>Password</label>
+            <input type="password" [(ngModel)]="password" name="password" class="form-control" placeholder="Password">
+         </div>
+         <button (click)="login()" class="btn btn-black mt-3">Login</button>
+         <button (click)="onreg()" class="btn btn-secondary mt-3 ms-4">Register</button>
+        </form>
+      </div>
+     
+       
+    
+ </div>
